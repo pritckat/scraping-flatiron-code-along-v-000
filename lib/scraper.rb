@@ -18,12 +18,11 @@ class Scraper
   #  end
   #  binding.pry
   end
-end
 
   def get_courses
     self.get_page.css(".post")
   end
-
+end
 Scraper.new.get_page
 
 #def print_courses
